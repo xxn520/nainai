@@ -101,8 +101,8 @@ app.get('/', (req, res, next) => {
   codes.forEach((code) => {
       result[code] = ""
       superagent.get(`http://box.in66.co/admin/monc/machine-status-list?date=2017-06-02+00%3A00%3A00&date-to=2017-06-10+00%3A00%3A00&code=${code}`)
-      .set('cookie', 'XSRF-TOKEN=eyJpdiI6IjVUYmx3eHpvWWE1M09oMHNHcTVhVHc9PSIsInZhbHVlIjoiRW02Nm9wODlkcFJqaURUMDczTXBtblMyYnoxZklyUnNxZXhUUUd4TXBuWjZSYXJEU2g3RHc4SjUrNkdHMkdSZVlDRVIrQ29ydytudU16WDE5OEV1eXc9PSIsIm1hYyI6IjJkMWQ5MDc2YzhiNWI5MmE4OTZhMDg3MTMxZDcwOWQ3NDFjNWRmNTgxZWZiNGRjNmQ2NGI1MjMxODQ5YjA4MDQifQ%3D%3D; expires=Sat, 17-Jun-2017 05:28:51 GMT; Max-Age=43200; path=/')
-      .set('cookie', 'laravel_session=eyJpdiI6IkdvUVR6ZHVcL0lORUNkZFwvZXVnZ2RxQT09IiwidmFsdWUiOiJHODl2RVJ4UzJcL3pFY0tWcU1CUHo1RTA1RUZ0aW95Tmo0NjQ4MHJcL05QdDFcL1wvbEd6SWlJYklUQll5TFhybnJkdHlDekk2WVhPUGZud25rQ0xWZjZ3aUE9PSIsIm1hYyI6IjU2Njg2YmJlZTM4Y2FiOTNmMTYwN2NhMjAzZTAxMTVjOGQwOTc4NDdjYjYwMzVlYzExNDM5NjY0ZjBmMzQ3MDgifQ%3D%3D; expires=Sat, 17-Jun-2017 05:28:51 GMT; Max-Age=43200; path=/; HttpOnly')
+      .set('cookie', '')
+      .set('cookie', '')
       .end((err, sres) => {
         if (err) {
           return next(err)
