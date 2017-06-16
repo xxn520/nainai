@@ -1,0 +1,11 @@
+{
+  "name": "nainai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1",
+    "express": "^4.15.3",
+    "superagent": "^3.5.2"
+  }
+}
