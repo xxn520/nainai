@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hlldei爬虫</title>
+
+    <!-- Bootstrap -->
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="container">
+	    <h1>hlldei爬虫</h1>
+
+	    <form method="post" action="/nainaideipachong">
+		  <div class="form-group">
+		    <label for="start">开始时间（格式：2017-06-02+00:00:00）</label>
+		    <input type="text" name="start" class="form-control" id="start" placeholder="请输入开始时间（格式：2017-06-02+00:00:00）">
+		  </div>
+		  <div class="form-group">
+		    <label for="end">结束时间（格式：2017-06-02+00:00:00）</label>
+		    <input type="text" name="end" class="form-control" id="end" placeholder="请输入结束时间（格式：2017-06-02+00:00:00）">
+		  </div>
+		  <div class="form-group">
+		    <label for="codes">id列表，以换行分隔</label>
+		    <textarea id="codes" name="codes" class="form-control" rows="10"></textarea>
+		  </div>
+		  <div class="form-group">
+		    <label for="cookie">cookie</label>
+		    <textarea id="cookie" name="cookie" class="form-control" rows="10"></textarea>
+		  </div>
+		  <button type="submit" class="btn btn-default">提交</button>
+		</form>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
